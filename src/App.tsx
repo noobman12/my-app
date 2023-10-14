@@ -10,7 +10,7 @@ import InfoWidget from "./InfoWidget";
 import styles from "./App.module.css";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import { FiCamera } from "react-icons/fi";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaRegBell } from "react-icons/fa";
 import Avatar from "./Avatar";
 function App() {
   return (
@@ -535,28 +535,6 @@ function App() {
                 }}
               >
                 <div
-                  style={{
-                    backgroundColor: "#000000",
-                    display: "flex",
-                    width: "22px",
-                    height: "22px",
-                    padding: "10px",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    gap: " 10px",
-                    borderRadius: "100px",
-                    background: "#000",
-                    alignSelf: "center",
-                  }}
-                >
-                  <InfoWidget
-                    iconLeft='/images/Nike.png'
-                    padding='0'
-                    alignSelf='center'
-                  ></InfoWidget>
-                </div>
-                <div
                   className={styles.flexCol}
                   style={{
                     gap: 0,
@@ -569,41 +547,50 @@ function App() {
                     fontWeight: "700",
                     lineHeight: "20.5px" /* 157.692% */,
                     letterSpacing: "0.5px",
+                    textAlign: "start",
+                    display: "flex",
                   }}
                 >
                   <span>All your notifications are well turned on</span>
                 </div>
                 <div
-                  className={styles.flexCol}
-                  style={{ gap: 0, flex: 0, alignItems: "flex-end" }}
+                  className={styles.flex}
+                  style={{
+                    alignItems: "center",
+                    gap: "16px",
+                    height: "27px",
+                    width: "94px",
+                  }}
                 >
-                  <span
+                  <div className='stick' style={{ float: "right" }}>
+                    <img src='/images/Line 3.svg' alt='' />
+                  </div>
+                  <FaRegBell></FaRegBell>
+                  <div
                     style={{
-                      color: "#000",
-                      fontFamily: "Roboto",
-                      fontSize: "15px",
-                      fontStyle: "normal",
-                      fontWeight: "600",
-                      lineHeight: "20px" /* 133.333% */,
-                      letterSpacing: "0.3px",
-                      textAlign: "start",
+                      display: "flex",
+                      padding: "2px 18px",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      borderRadius: "100px",
+                      background: "#000",
                     }}
                   >
-                    -27.50
-                  </span>
-                  <span
-                    style={{
-                      color: "#76848B",
-                      fontFamily: "Roboto",
-                      fontSize: "9px",
-                      fontStyle: "normal",
-                      fontWeight: "400",
-                      lineHeight: "20px" /* 133./* 222.222% */,
-                      letterSpacing: "0.3px",
-                    }}
-                  >
-                    11:00AM
-                  </span>
+                    <span
+                      style={{
+                        color: "#FFF",
+
+                        fontFamily: "Roboto",
+                        fontSize: "16px",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        lineHeight: "23px" /* 143.75% */,
+                        letterSpacing: "0.5px",
+                      }}
+                    >
+                      3
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
