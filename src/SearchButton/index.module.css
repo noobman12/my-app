@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  width: 316px;
+  height: 51px;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding-right: 14px;
+  padding-left: 16px;
+  background: #fff;
+  margin-top: 27px;
+}
+
+.flex {
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.padding8 {
+  border-radius: 100px;
+  margin-left: 121px;
+  padding: 8px;
+  justify-self: right;
+}
+
+.text {
+  color: #a2a9ad;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.5px;
+}
+
+.buttonTextWhite {
+  color: white;
+  background-color: black;
+}
+
+.buttonTextBlack {
+  color: black;
+  background-color: white;
+}

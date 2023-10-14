@@ -1,0 +1,18 @@
+.widget {
+  display: flex;
+  padding: 6px 0px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  height: 39px;
+}
+
+.text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 153.333% */
+  letter-spacing: 0.5px;
+}
